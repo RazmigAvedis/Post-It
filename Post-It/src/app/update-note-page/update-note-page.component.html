@@ -1,0 +1,13 @@
+<div class="container">
+    <form class="form"#noteForm=ngForm (ngSubmit)=onSubmit()>
+    <h3 class="label">Title</h3>
+    <input class="title" type="text" minlength="3" name="title" placeholder="title" [(ngModel)]="this.unote.title" required #title="ngModel">
+    <h3 class="label">Post-it Content</h3>
+    <textarea class="content" type="text" minlength="3" name="text" placeholder="the content of post-it" [(ngModel)]="this.unote.text" required #content="ngModel"></textarea>
+    <div class="buttons-container">
+    <button class="button" type="submit">Update Post-it</button>
+    <button class="button" (click)="onCancel()">Cancel</button>
+    </div>
+    </form>
+</div>
+    

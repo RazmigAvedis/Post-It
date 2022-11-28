@@ -1,0 +1,5 @@
+<div class="container">
+<div *ngFor="let note of this.notesList.getAllNotes().values()">
+    <app-note [nt]="note" (delete_event)="onDelete($event)" (page_event)="onPageChange($event)" (note_event)="onNote($event)"></app-note>
+</div>
+</div>

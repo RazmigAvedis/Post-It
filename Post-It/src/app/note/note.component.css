@@ -1,0 +1,24 @@
+.container{
+    background-color: yellow;
+margin:10%;
+}
+
+.note-container{
+    margin:20px;
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+}
+
+.text
+{
+    inline-size: 100%;
+    overflow-wrap: break-word;
+    height: 75%;
+} 
+
+.title{
+    height: 25%;
+    inline-size: 100%;
+    overflow-wrap: break-word;
+}
