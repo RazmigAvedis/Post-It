@@ -1,24 +1,32 @@
 .container{
     background-color: yellow;
-margin:10%;
+    justify-content: center;
+    margin:10px;
+    width: 200px;
+    height: 200px;
 }
 
 .note-container{
-    margin:20px;
-    width: 200px;
-    height: 200px;
+    width: 70%;
+    height: 70%;
     background-color: brown;
+    cursor: pointer;
 }
 
 .text
 {
     inline-size: 100%;
     overflow-wrap: break-word;
-    height: 75%;
+    height: 60%;
 } 
 
 .title{
     height: 25%;
     inline-size: 100%;
     overflow-wrap: break-word;
+}
+
+.delete{
+    cursor: pointer;
+    display: flex;
 }
