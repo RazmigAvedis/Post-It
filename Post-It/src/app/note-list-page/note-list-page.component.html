@@ -1,7 +1,9 @@
 
 <div *ngIf="this.current_page==page_type.Home">
 <mat-icon class="add-icon" (click)='addNoteChangePage()'>add</mat-icon>
-<app-notes-list [nList]="this.notesList" (delete_event)="deleteNote($event)" (page_event)="change_page_state($event)" (note_event)="getNote($event)"></app-notes-list>
+<div class="notesList-container">
+<app-notes-list class="notesList" [nList]="this.notesList" (delete_event)="deleteNote($event)" (page_event)="change_page_state($event)" (note_event)="getNote($event)"></app-notes-list>
+</div>
 </div>
 
 <app-update-note-page *ngIf="this.current_page==page_type.Update" (update_note_event)="updateNote($event)" (event)="change_page_state($event)" [unote]="this.update_note"></app-update-note-page>

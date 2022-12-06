@@ -20,13 +20,14 @@
 
 
 .title{ 
-    width: 75%;
+    width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .content{
-    width: 75%;
+    height: 150px;
+    width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -46,4 +47,5 @@
   line-height: 100%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: medium;
+  cursor: pointer;
 }

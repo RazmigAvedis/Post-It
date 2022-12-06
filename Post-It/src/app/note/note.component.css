@@ -1,32 +1,46 @@
 .container{
     background-color: yellow;
+    display: flex;
     justify-content: center;
     margin:10px;
     width: 200px;
     height: 200px;
+    border-radius: 20px;
 }
 
 .note-container{
-    width: 70%;
-    height: 70%;
-    background-color: brown;
+    display: block;
+
+    margin: auto;
+    background-color: orange;
+    justify-content: center;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
     cursor: pointer;
+    
 }
 
 .text
 {
-    inline-size: 100%;
     overflow-wrap: break-word;
+    text-align: center;
     height: 60%;
+    overflow-y: hidden;
+    margin: 10px;
 } 
 
 .title{
     height: 25%;
-    inline-size: 100%;
+    margin: 10px;
     overflow-wrap: break-word;
+    overflow-y: hidden;
+    text-align: center;
 }
 
 .delete{
     cursor: pointer;
-    display: flex;
+    
+    margin: 2px;
+    right: 10px;
 }
