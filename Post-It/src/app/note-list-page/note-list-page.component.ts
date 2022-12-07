@@ -18,10 +18,10 @@ export class NoteListPageComponent implements OnInit{
 
   constructor(private router:Router){
     var values = [],
-        keys = Object.keys(localStorage)
+        keys = Object.keys(localStorage),
+        i= keys.length
 
-    var i=0;
-    do{
+    while(i--){
         var elt=localStorage.getItem(keys[i]);
         if(elt!=null)
         {
@@ -33,8 +33,7 @@ export class NoteListPageComponent implements OnInit{
           console.log(this.note.id)
           this.notesList.add(this.note)
         }
-        i++;
-    }while(i<keys.length)
+    }
   }
   
 

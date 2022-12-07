@@ -1,6 +1,5 @@
 .container{
     background-color: yellow;
-    display: flex;
     justify-content: center;
     margin:10px;
     width: 200px;
@@ -10,15 +9,15 @@
 
 .note-container{
     display: block;
-
+    position: relative;
     margin: auto;
     background-color: orange;
     justify-content: center;
     width: 80%;
     height: 80%;
+    top: 20px;
     border-radius: 10px;
     cursor: pointer;
-    
 }
 
 .text
@@ -40,7 +39,6 @@
 
 .delete{
     cursor: pointer;
-    
-    margin: 2px;
-    right: 10px;
+    float: right;
+    margin: 3px;
 }
