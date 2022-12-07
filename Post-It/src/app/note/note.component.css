@@ -1,44 +1,54 @@
+*{
+    box-sizing: border-box;
+}
 .container{
-    background-color: yellow;
-    justify-content: center;
+    background-color: #fed707;
     margin:10px;
-    width: 200px;
-    height: 200px;
-    border-radius: 20px;
+    width: 230px;
+    height: 250px;
+    border-radius: 15px;
+    font-family: sans-serif;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
 }
 
 .note-container{
-    display: block;
-    position: relative;
-    margin: auto;
-    background-color: orange;
-    justify-content: center;
-    width: 80%;
-    height: 80%;
-    top: 20px;
-    border-radius: 10px;
+    display: inline-block;
+    background-color: #f2f385;
+    width: 94%;
+    height: calc(100% - 40px);
     cursor: pointer;
+    margin-left: 3%;
+    border-radius: 2px;
 }
 
 .text
 {
     overflow-wrap: break-word;
     text-align: center;
-    height: 60%;
+    height: 50%;
     overflow-y: hidden;
     margin: 10px;
+    font-size: 18px;
 } 
 
 .title{
     height: 25%;
-    margin: 10px;
+    margin-top: 25px;
     overflow-wrap: break-word;
     overflow-y: hidden;
     text-align: center;
+    font-size: 30px;
+    line-height: 50px;
+    margin-bottom: 15px;
 }
 
 .delete{
-    cursor: pointer;
+    text-align: right;
     float: right;
+    cursor: pointer;
     margin: 3px;
+    width: 23px;
+    height: 20px;
 }
