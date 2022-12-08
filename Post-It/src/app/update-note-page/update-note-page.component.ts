@@ -12,9 +12,12 @@ export class UpdateNotePageComponent implements OnChanges, OnInit {
   @Output() event = new EventEmitter()
   @Output() update_note_event = new EventEmitter()
   @Input() unote!:Note
-
+  note!:Note
+  
   ngOnChanges(): void {
       console.log(this.unote)
+      this.note=new Note(this.unote.title,this.unote.text)
+      this.note.id=this.unote.id
   }
   ngOnInit(): void {
       
@@ -23,7 +26,7 @@ export class UpdateNotePageComponent implements OnChanges, OnInit {
   onSubmit()
   {
     this.event.emit(Page.Home)
-    this.update_note_event.emit(this.unote)
+    this.update_note_event.emit(this.note)
   }
 
   onCancel(){
